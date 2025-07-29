@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
-import ToolDetail from '../../components/ToolDetail';
-import { getToolById } from '../../lib/data';
+import ToolDetail from '../../../components/ToolDetail';
+import { getToolById } from '../../../../lib/data';
 
 export default function ToolDetailPage({ params }) {
   const tool = getToolById(params.id);

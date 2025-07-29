@@ -2,10 +2,10 @@
 
 import { useState, useMemo } from 'react';
 import { notFound } from 'next/navigation';
-import ToolCard from '../../components/ToolCard';
-import PricingTable from '../../components/PricingTable';
-import BenchmarkChart from '../../components/BenchmarkChart';
-import { getCategoryById, getToolsByCategory } from '../../lib/data';
+import ToolCard from '../../../components/ToolCard';
+import PricingTable from '../../../components/PricingTable';
+import BenchmarkChart from '../../../components/BenchmarkChart';
+import { getCategoryById, getToolsByCategory } from '../../../../lib/data';
 
 export default function CategoryPage({ params }) {
   const category = getCategoryById(params.id);
